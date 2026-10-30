@@ -24,13 +24,9 @@ Observed clinical data used for comparison are taken from published studies (te 
 - PK-Sim and MoBi (OSP Suite v12)
 - R v4.5.0 with `ospsuite` v12.4.3 and the tidyverse packages
 
-## Reproducing the results
-
-Step-by-step instructions will be added once all files are uploaded.
-
 ## Citation
 
-Garamani D, Mihranyan A, Sjögren E. A Mechanistic PBPK-PD Framework to Predict Early Bactericidal Activity of Rifampicin Across Populations, Formulations and Adherence Scenarios: A Proof-of-Concept Study. [Journal, volume and DOI to be added.]
+[To be added.]
 
 ## License
 
