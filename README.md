@@ -1,28 +1,28 @@
-# Rifampicin PBPK-PD model for tuberculosis (MTP framework)
+# A Mechanistic PBPK-PD Framework to Predict Early Bactericidal Activity of Rifampicin
 
-Code and model files accompanying the manuscript *[title to be added]* (Garamani et al., [journal and status to be added]).
+Code and model files accompanying the manuscript *A Mechanistic PBPK-PD Framework to Predict Early Bactericidal Activity of Rifampicin Across Populations, Formulations and Adherence Scenarios: A Proof-of-Concept Study* by Dylan Garamani, Albert Mihranyan and Erik Sjögren (Department of Pharmaceutical Biosciences, Uppsala University). [Journal, volume and DOI to be added.]
 
 The repository contains a whole-body physiologically based pharmacokinetic (PBPK) model of rifampicin, built in PK-Sim and MoBi (Open Systems Pharmacology Suite), coupled to the multistate tuberculosis pharmacometric (MTP) model of Clewe et al. (2016). The MTP model is implemented in MoBi and linked directly to the PK-Sim rifampicin model.
 
 ## Data and code availability
 
-The MoBi implementation of the MTP model, the R code for PBPK–PD coupling and post-processing, and the digitised controlled-release dissolution profiles used for the modified-release formulation simulations (Hiremath and Saha, 2008) are available at https://github.com/DylanGaramani/rifampicin-pbpk-pd-tb.
+The MoBi implementation of the multistate tuberculosis pharmacometric (MTP) model, the R code for PBPK–PD coupling and post-processing, and the digitised in vitro dissolution datasets used for the modified-release formulation simulations are available at https://github.com/DylanGaramani/rifampicin-pbpk-pd-tb. The dissolution profiles were digitised from the figures of Hiremath and Saha (2008) and extrapolated to 100% cumulative release.
 
-The rifampicin PBPK model is the rifampicin model from the Open Systems Pharmacology PBPK Model Library (version 2.0, OSP Suite 12.3), available at https://github.com/Open-Systems-Pharmacology/OSP-PBPK-Model-Library (release v12.3).
+The underlying rifampicin PBPK model is publicly available from the Open Systems Pharmacology PBPK Model Library, Rifampicin folder, at commit 07a71b3e025879db5cc46feca1d262cc786ed0f6: https://github.com/Open-Systems-Pharmacology/OSP-PBPK-Model-Library/tree/07a71b3e025879db5cc46feca1d262cc786ed0f6/Rifampicin
 
-Observed clinical data used for comparison are taken from published studies (te Brake et al., 2021; Svensson et al., 2018).
+Observed clinical data used for comparison are taken from published studies (te Brake et al., 2021; Svensson et al., 2018). These clinical data are not included in this repository.
 
 ## Contents
 
 - **MTP model (MoBi):** the multistate tuberculosis model implemented in MoBi, coupled to the PK-Sim rifampicin model.
 - **R code:** scripts for PBPK–PD coupling, simulations and post-processing, using `ospsuite`.
-- **Dissolution data:** digitised controlled-release dissolution profiles used for the modified-release formulation simulations.
+- **Dissolution data:** digitised in vitro release profiles of the modified-release rifampicin formulations (Hiremath and Saha, 2008), extrapolated to 100% release.
 - **Reproduction script:** code reproducing the in vitro bactericidal dynamics of Clewe et al. (2016), Figure 3.
 
 ## Requirements
 
-- OSP Suite 12.3 (PK-Sim and MoBi)
-- R with `ospsuite`, `ggplot2`, `dplyr` and `patchwork`
+- PK-Sim and MoBi (OSP Suite v12)
+- R v4.5.0 with `ospsuite` v12.4.3 and the tidyverse packages
 
 ## Reproducing the results
 
@@ -30,7 +30,7 @@ Step-by-step instructions will be added once all files are uploaded.
 
 ## Citation
 
-Garamani D. et al. *[title, journal and DOI to be added]*.
+Garamani D, Mihranyan A, Sjögren E. A Mechanistic PBPK-PD Framework to Predict Early Bactericidal Activity of Rifampicin Across Populations, Formulations and Adherence Scenarios: A Proof-of-Concept Study. [Journal, volume and DOI to be added.]
 
 ## License
 
